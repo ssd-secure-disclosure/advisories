@@ -1,192 +1,81 @@
-<a href="http://fvcproductions.com"><img src="https://ssd-disclosure.com/wp-content/uploads/2019/01/ssd-black-on-white.png" title="SSD Logo" alt="SSD Logo"></a>
+![SSD Secure Disclosure](https://ssd-disclosure.com/wp-content/uploads/2019/01/ssd-black-on-white.png)
 
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
+## SSD Secure Disclosure
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
+> SSD helps security researchers turn their skills in uncovering security vulnerabilities into a career.
+Designed by researchers, for researchers, SSD provides the fast response and support needed to get zero-day vulnerabilities responsibly reported to vendors and to get researchers the compensation they deserve. We help researchers get to the bottom of vulnerabilities affecting major operating systems, software or devices.
 
-# Repository Title Goes Here
+## The SSD Community
 
-> Subtitle or Short Description Goes Here
+> As part of our vulnerability disclosure program we have established a community of researchers. We believe in long-term investment in this group and we provide the tools, education and knowledge they need to find more vulnerabilities and advanced attack vectors and discover innovative ways to exploit them.
 
-> ideally one sentence
+> We sponsor researcher’s workshops, courses, software licenses, hardware and conference attendance.
 
-> include terms/tags that can be searched
+> We are always looking for new researchers to join our community. That’s why we are promoting our “Friend Bring Friend” program. When you refer us a new researcher that starts working with us on Operating systems / Mobile / Web Browsers – you get 10,000$ USD / For other vulnerabilities – you get 1,000$ USD
 
-**Badges will go here**
+> As another way to support the international community we sponsor security conferences around the world – from Black Hat USA to community conferences such as DefCamp Romania. We publish vulnerability technical information in our blog (https://ssd-disclosure.com/index.php/advisories), on Twitter (@SecuriTeam_SSD) and in vendor advisories. We also give lectures and host hacking competitions at international security conferences.
 
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
+> In 2018 we sponsored and some of our researchers attended:
+    OffensiveCon
+    Hack In The Box
+    Zer0con
+    CanSec
 
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
+## Table of Contents
 
-- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
+> [SSD Secure Disclosure](#SSD)
+> [The SSD Community](#The)
+> [Advisories](#Advisories)
+> [Team](#Team)
+> [Q&A](#Q&A)
+> [Contact](#Contact)
+> [License](#license)
 
-***INSERT ANOTHER GRAPHIC HERE***
+## Advisories
 
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
-
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
+- TODO: put link to advisory 1
 
 ---
 
-## Table of Contents (Optional)
-
-> If you're `README` has a lot of info, section headers might be nice.
-
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
-- [License](#license)
-
-
----
-
-## Example (Optional)
-
-```javascript
-// code away!
-
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
-
----
-
-## Installation
-
-- All the `code` required to get started
-- Images of what it should look like
-
-### Clone
-
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
-
-### Setup
-
-- If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
-
-```shell
-$ brew update
-$ brew install fvcproductions
-```
-
-> now install npm and bower packages
-
-```shell
-$ npm install
-$ bower install
-```
-
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
-
----
-
-## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
-
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
-
----
-
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
-
-### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
-
----
 
 ## Team
 
 > Or Contributors/People
 
-| <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
-| :---: |:---:| :---:|
-| [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
-| <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
-
-- You can just grab their GitHub profile image URL
-- You should probably resize their picture using `?s=200` at the end of the image URL.
-
 ---
 
-## FAQ
+## Q&A
 
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
+- **How much can I earn from working with you?** The amount paid depends on two different variables:
 
+    - How widespread is the software/hardware? Popular products typically reach higher amounts.
+    - How critical is the vulnerability? For example, if you find an unauthenticated arbitrary code execution vulnerability, you would be paid substantially more than for a Cross Site Scripting vulnerability.
+
+- **What if I want to stay anonymous?** 
+    - Fine by us! A lot of our researchers choose to stay anonymous.
+
+- **What is your policy regarding privacy and confidentiality of researcher’s information?**
+    - We take the privacy of researchers very seriously and do not disclose to any third party (including to customers) any personal information about researchers such as names, aliases, email addresses, bank details, or any other personal or confidential information.
+
+- **What is the difference between SSD and Bug Bounties or other programs?**
+    - Financially:
+        - We pay more than bug bounty programs.
+        - If a vendor doesn’t have a bug bounty program – we are still interested in acquiring the vulnerability and reporting it to the vendor.
+        - We believe researchers need to get paid for their effort and we are willing to offer higher rewards.
+    - Administratively:
+        - We will handle all the reporting process.
+        - We will publish your research and attribute it per your instructions.
+- **How do I submit my questions or research?**
+    - Send us an email contact@ssd-disclosure.com – It’s that easy!
 ---
 
-## Support
+## Contact
 
-Reach out to me at one of the following places!
+Reach us out at one of the following places:
 
-- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
-- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
-- Insert more social links here.
-
----
-
-## Donations (Optional)
-
-- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
-
+- Our website at https://ssd-disclosure.com/
+- Our twitter at https://twitter.com/SecuriTeam_SSD
+- Our mail address contact@ssd-disclosure.com
 
 ---
 
