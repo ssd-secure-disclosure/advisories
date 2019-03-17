@@ -38,12 +38,6 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 ---
 
 
-## Team
-
-> Or Contributors/People
-
----
-
 ## Q&A
 
 - **How much can I earn from working with you?** The amount paid depends on two different variables:
