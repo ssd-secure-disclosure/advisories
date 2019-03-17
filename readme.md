@@ -23,13 +23,13 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 
 ## Table of Contents
 
-> [SSD Secure Disclosure](#SSD)
-> [The SSD Community](#The)
-> [Advisories](#Advisories)
-> [Team](#Team)
-> [Q&A](#Q&A)
-> [Contact](#Contact)
-> [License](#license)
+- [SSD Secure Disclosure](#SSD)
+- [The SSD Community](#The)
+- [Advisories](#Advisories)
+- [Team](#Team)
+- [Q&A](#Q&A)
+- [Contact](#Contact)
+- [License](#license)
 
 ## Advisories
 
