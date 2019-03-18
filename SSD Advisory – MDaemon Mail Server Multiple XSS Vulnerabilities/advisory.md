@@ -31,16 +31,14 @@ MDaemon mail Server versions 14.0.x - 18.5.x
 
 The first vulnerability lies in the html attachment feature of MDaemon. Attackers can send malicious html documents, and when the victim will open the attachment, it'll be opened in the browser and will run the attacker's client side code.
 
-![](https://ssd-disclosure.com/wp-content/uploads/2019/02/Mdaemon-email-attachment-300x142.png)
-
+<img src="https://ssd-disclosure.com/wp-content/uploads/2019/02/Mdaemon-email-attachment-300x142.png" width="80%" height="100%">
 When the victim clicks the html file with this content:
 
 <script>alert(window.location)</script>
 
 It will open the attachment immediately and will run the attackers client side code.
 
-![](https://ssd-disclosure.com/wp-content/uploads/2019/02/Mdaemon-attachment-click-300x288.png)
-
+<img src="https://ssd-disclosure.com/wp-content/uploads/2019/02/Mdaemon-attachment-click-300x288.png" width="50%" height="100%">
 The second XSS vulnerability is inside the content itself of the email. Attackers can exploit this vulnerability in order to steal any folder/contact of the victim's email and forward them to himself. 
 
 The Mdeamon server serves the XSS content with an error method.
