@@ -31,7 +31,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 
 ## Advisories
 
-- TODO: put link to advisory 1
+- [SSD Advisory – MDaemon Mail Server Multiple XSS Vulnerabilities](https://github.com/ssd-secure-disclosure/advisories/blob/master/SSD%20Advisory%20%E2%80%93%203915/advisory.md)
 
 ---
 
@@ -43,7 +43,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
     - How widespread is the software/hardware? Popular products typically reach higher amounts.
     - How critical is the vulnerability? For example, if you find an unauthenticated arbitrary code execution vulnerability, you would be paid substantially more than for a Cross Site Scripting vulnerability.
 
-- **What if I want to stay anonymous?** 
+- **What if I want to stay anonymous?**
     - Fine by us! A lot of our researchers choose to stay anonymous.
 
 - **What is your policy regarding privacy and confidentiality of researcher’s information?**
