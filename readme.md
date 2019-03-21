@@ -33,7 +33,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 
 - [SSD Advisory – MDaemon Mail Server Multiple XSS Vulnerabilities](https://github.com/ssd-secure-disclosure/advisories/blob/master/SSD%20Advisory%20%E2%80%93%203915/advisory.md)
 - [SSD Advisory – Linux BlueZ Information Leak and Heap Overflow](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203743)
-
+- [SSD Advisory – Cisco ISE Unauthenticated XSS to Privileged RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203778)
 ---
 
 
