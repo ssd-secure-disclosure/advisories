@@ -36,6 +36,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Cisco ISE Unauthenticated XSS to Privileged RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203778)
 - [SSD Advisory – VirtualBox VRDP Guest-to-Host Escape](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203736)
 - [SSD Advisory – Horde Groupware Webmail Authenticated Arbitrary File Injection to RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203814)
+- [SSD Advisory – SquirrelMail Incoming e-Mails Stored XSS](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203928)
 ---
 
 
