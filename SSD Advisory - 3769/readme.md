@@ -18,7 +18,7 @@ Software for the SME Server is packaged using RPM Package Manager (RPM) system. 
 The vulnerable components are the “Certificate Management” & “Advanced Web Statistics”, Which are vulnerable to Cross-Site Scripting & Cross-Site Request Forgery.
 For the next demonstration , the Attackers IP is 192.168.1.2 and the SME Server IP 192.168.1.109.
 The exploitation starts with the contrib – PHPKI – smeserver-phpki. This contrib provides a Certificate Management functionality. The administrator adds new certificates, which the users can download and set up in their browsers. The Certificate Management portal is accessible at https://<SME Server IP>/phpki/.
-It should look like this:
+It should look like this:<br>
 <img src="https://blogs.securiteam.com/wp-content/uploads/2018/10/Sme-Server-PHPki-page-300x85.png">
 
 All users can access this without any authentication. The portal provides a Search function where a user can search for existing certificates.
