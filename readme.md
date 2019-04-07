@@ -57,6 +57,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Linux Kernel AF_PACKET Use After Free (packet_sock)](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203731)
 - [SSD Advisory – Infiniband Linux Driver UAF](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203727)
 - [SSD Advisory – LINE Corporation URI Handlers Remote Command Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203724)
+- [SSD Advisory – phpMyAdmin File Inclusion and Remote Code Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203700)
 ---
 
 
