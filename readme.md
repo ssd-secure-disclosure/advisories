@@ -47,6 +47,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Symfony Framework forward() Remote Code Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203781)
 - [SSD Advisory – Chrome AppCache Subsystem SBX by utilizing a Use After Free](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203786)
 - [SSD Advisory – Chrome Type Confusion in JSCreateObject Operation to RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203783)
+- [SSD Advisory – Firefox JavaScript Type Confusion RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203765)
 ---
 
 
