@@ -41,6 +41,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – VxWorks RPC Buffer Overflow](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203904)
 - [SSD Advisory – Synology PhotoStation Unauthenticated SQL Injection and Arbitrary File Injection to RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203957)
 - [SSD Advisory – iOS powerd Uninitialized Mach Message Reply to Sandbox Escape and Privilege Escalation](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203944)
+- [SSD Advisory – Apache OpenOffice Virtual Table Corruption](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203758)
 ---
 
 
