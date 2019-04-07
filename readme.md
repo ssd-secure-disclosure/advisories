@@ -53,6 +53,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Android Printing Man in the Middle Attack](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203751)
 - [SSD Advisory – IRDA Linux Driver UAF](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203759)
 - [SSD Advisory – ASUSTOR NAS Devices Authentication Bypass](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203747)
+- [SSD Advisory – CloudByte ElastiStor OS Unauthenticated Remote Code Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203737)
 ---
 
 
