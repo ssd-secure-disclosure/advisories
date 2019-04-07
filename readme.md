@@ -44,6 +44,8 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Apache OpenOffice Virtual Table Corruption](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203758)
 - [SSD Advisory – iOS/macOS Kernel task_inspect Information Leak](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203802)
 - [SSD Advisory – iOS/macOS Safari Sandbox Escape via QuartzCore Heap Overflow](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203796)
+- [SSD Advisory – Symfony Framework forward() Remote Code Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203781)
+
 ---
 
 
