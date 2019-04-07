@@ -51,6 +51,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Firefox Information Leak](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203766)
 - [SSD Advisory – Cisco Prime Infrastructure File Inclusion and Remote Command Execution to Privileges Escalation](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203723)
 - [SSD Advisory – Android Printing Man in the Middle Attack](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203751)
+- [SSD Advisory – IRDA Linux Driver UAF](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203759)
 ---
 
 
