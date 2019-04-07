@@ -49,6 +49,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Chrome Type Confusion in JSCreateObject Operation to RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203783)
 - [SSD Advisory – Firefox JavaScript Type Confusion RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203765)
 - [SSD Advisory – Firefox Information Leak](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203766)
+- [SSD Advisory – Cisco Prime Infrastructure File Inclusion and Remote Command Execution to Privileges Escalation](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203723)
 ---
 
 
