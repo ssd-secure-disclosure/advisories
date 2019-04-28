@@ -59,6 +59,8 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – LINE Corporation URI Handlers Remote Command Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203724)
 - [SSD Advisory – phpMyAdmin File Inclusion and Remote Code Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203700)
 - [SSD Advisory – K7 Total Security Device Driver Arbitrary Memory Read](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203435)
+- [SSD Advisory – GetSimple CMS Unauthenticated Remote Code Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203899)
+
 ---
 
 
