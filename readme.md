@@ -63,6 +63,8 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Vesta CP Remote Command Execution To Privilege Escalation](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203926)
 - [SSD Advisory – QRadar Remote Command Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203689)
 - [SSD Advisory – Linux AF_LLC Double Free](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203686)
+- [SSD Advisory – TrustPort Management Unauthenticated Remote Code Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203685)
+
 ---
 
 
