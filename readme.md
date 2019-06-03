@@ -66,6 +66,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – TrustPort Management Unauthenticated Remote Code Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203685)
 - [SSD Advisory – Adobe Acrobat Reader DC Use After Free](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203980)
 - [SSD Advisory – Firefox Sandbox Infoleak From Uninitialized Handle In CrossCall](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203923)
+- [SSD Advisory – TerraMaster TOS Unauthenticated Remote Command Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203602)
 ---
 
 
