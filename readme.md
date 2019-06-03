@@ -68,6 +68,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Firefox Sandbox Infoleak From Uninitialized Handle In CrossCall](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203923)
 - [SSD Advisory – TerraMaster TOS Unauthenticated Remote Command Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203602)
 - [SSD Advisory – Vigor ACS Unsafe Flex AMF Java Object Deserialization](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203681)
+- [SSD Advisory – Western Digital My Cloud Pro Series PR2100 Authenticated RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203679)
 ---
 
 
