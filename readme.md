@@ -31,7 +31,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 
 ## Advisories
 
-- [SSD Advisory – MDaemon Mail Server Multiple XSS Vulnerabilities](https://github.com/ssd-secure-disclosure/advisories/blob/master/SSD%20Advisory%20%E2%80%93%203915/advisory.md)
+- [SSD Advisory – MDaemon Mail Server Multiple XSS Vulnerabilities](https://github.com/ssd-secure-disclosure/advisories/blob/master/SSD%20Advisory%20%E2%80%93%203915)
 - [SSD Advisory – Linux BlueZ Information Leak and Heap Overflow](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203743)
 - [SSD Advisory – Cisco ISE Unauthenticated XSS to Privileged RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203778)
 - [SSD Advisory – VirtualBox VRDP Guest-to-Host Escape](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203736)
@@ -71,6 +71,9 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Western Digital My Cloud Pro Series PR2100 Authenticated RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203679)
 - [SSD Advisory – AppWeb Authentication Bypass (Digest, and Basic)](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203676)
 - [SSD Advisory – VK Messenger (VKontakte) vk:// URI Handler Commands Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203674)
+- [SSD Advisory - Fortigate DHCP Stored XSS](https://github.com/ssd-yuvalk/advisories/tree/master/SSD%20Advisory%20-%203987)
+- [SSD Advisory - phpBB CSRF Token Hijacking Leading to Stored XSS](https://github.com/ssd-yuvalk/advisories/tree/master/SSD%20Advisory%20-%204007)
+- [SSD Advisory - OpenSSH Pre-Auth XMSS Integer Overflow](https://github.com/ssd-yuvalk/advisories/tree/master/SSD%20Advisory%20-%204033)
 ---
 
 
@@ -108,3 +111,5 @@ Reach us out at one of the following places:
 - Our mail address contact@ssd-disclosure.com
 
 ---
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

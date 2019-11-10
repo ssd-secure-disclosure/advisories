@@ -1,0 +1,15 @@
+Port 65535
+
+HostkeyAlgorithms ssh-xmss@openssh.com,ssh-xmss-cert-v01@openssh.com
+PubkeyAcceptedKeyTypes ssh-xmss@openssh.com,ssh-xmss-cert-v01@openssh.com
+
+# Change this to the full path of the xmss key
+HostKey /root/XMSS/p_xmss_bug/id_xmss
+
+PermitRootLogin yes
+
+ChallengeResponseAuthentication no
+
+AcceptEnv LANG LC_*
+
+PasswordAuthentication no
