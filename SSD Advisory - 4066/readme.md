@@ -846,3 +846,9 @@ address of our controlled kernel buffer is within `x19`, and another controlled 
 Even with stringent sandboxing protections locking down large amounts of the kernel attack surface, many userland components still contain a large amount of 
 attack surface themselves with many daemons implementing 50+ RPC's. Chaining a sandbox escape can grant access to areas of the kernel which are highly 
 under-audited, as much of the focus is put into the small slice of the kernel which is directly accessible.
+
+If you have any further questions feel free to DM @iBSparkes on Twitter, or (G)mail me at bensparkes8.
+
+## Thank you
+
+We would like to thank iBSparkes for writing this advisory and diving into the technical details with 08Tc3wBB.
