@@ -1,0 +1,102 @@
+#
+# /etc/zshrc is sourced in interactive shells.  It
+# should contain commands to set up aliases, functions,
+# options, key bindings, etc.
+#
+
+watch=(all)
+
+
+
+if [ -f ~/2.DO ]; then
+   cat ~/2.DO
+fi
+if [ `id -gn` = `id -un` -a `id -u` -gt 14 ]; then
+        umask 002
+else
+        umask 022
+fi
+
+# Set up aliases
+alias mv='nocorrect mv'       # no spelling correction on mv
+alias cp='nocorrect cp'       # no spelling correction on cp
+alias df='df -h'	      # More human readable
+alias mkdir='nocorrect mkdir' # no spelling correction on mkdir
+alias more='less'
+alias ~='cd ~'
+alias grep='grep --color=auto' # Colors on Grep
+
+
+# Shell functions
+setenv() { export $1=$2 }  # csh compatibility
+# Johnny's opts...
+setopt correct
+setopt correct_all
+setopt nohup
+#set correct=cmd
+
+# Some environment variables
+export USER=`id -un`
+export LOGNAME=$USER
+export HOSTNAME=`/usr/bin/uname -n`
+export MAIL=/var/spool/mail/$USER
+
+path=($path $HOME/bin)
+export PATH=$PATH:/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+
+# Set prompts
+#PROMPT=%b%S"$USER@%m %{[33m%}(%~) %#%s%B" 	   # default prompt
+#RPROMPT="%B%T%b"     # prompt for right side of screen
+#SPROMPT='You meant %r, Right? '
+
+
+#
+
+RPROMPT="%B%{[34m%}%T%{[0m%}%b"
+PROMPT=%b%S"$USER@%m %{[32m%}(%~) %#%s%B" 	   # default prompt
+
+#
+# below works, but if no zsh files are in /etc/profile.d it complains
+# everytime zsh is run. Commenting out for now.
+#
+# run other components
+#for i in /etc/profile.d/*.zsh
+#do
+#  source $i
+#done
+
+# bindkey -v             # vi key bindings
+bindkey -e               # emacs key bindings
+bindkey ' ' magic-space  # also do history expansino on space
+
+#------------------------------------------------------------------------
+# Define LINUX Color Styles Here!
+#------------------------------------------------------------------------
+
+LS_COLORS="no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:\
+cd=40;33;01:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:\
+*.bat=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:\
+*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.jpg=01;35:*.gif=01;35:\
+*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.README=05;1:*.DO=05;1:*.avi=00;32:*.mp3=00;33:"
+export LS_COLORS
+
+LS_OPTIONS="--color=tty -F -T 0"
+export LS_OPTIONS
+export CLICOLOR=1
+alias d=dir
+alias v=vdir
+alias vi=vim
+
+PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+
+export MANPATH=/usr/share/man:/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/share/man
+
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
+export LESS=-r
