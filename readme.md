@@ -74,6 +74,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory - Fortigate DHCP Stored XSS](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203987)
 - [SSD Advisory - phpBB CSRF Token Hijacking Leading to Stored XSS](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%204007)
 - [SSD Advisory - OpenSSH Pre-Auth XMSS Integer Overflow](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%204033)
+- [SSD Advisory - iOS Jailbreak via Sandbox Escape and Kernel R/W leading to RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%204066)
 ---
 
 
