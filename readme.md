@@ -71,9 +71,9 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory – Western Digital My Cloud Pro Series PR2100 Authenticated RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203679)
 - [SSD Advisory – AppWeb Authentication Bypass (Digest, and Basic)](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203676)
 - [SSD Advisory – VK Messenger (VKontakte) vk:// URI Handler Commands Execution](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203674)
-- [SSD Advisory - Fortigate DHCP Stored XSS](https://github.com/ssd-yuvalk/advisories/tree/master/SSD%20Advisory%20-%203987)
-- [SSD Advisory - phpBB CSRF Token Hijacking Leading to Stored XSS](https://github.com/ssd-yuvalk/advisories/tree/master/SSD%20Advisory%20-%204007)
-- [SSD Advisory - OpenSSH Pre-Auth XMSS Integer Overflow](https://github.com/ssd-yuvalk/advisories/tree/master/SSD%20Advisory%20-%204033)
+- [SSD Advisory - Fortigate DHCP Stored XSS](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203987)
+- [SSD Advisory - phpBB CSRF Token Hijacking Leading to Stored XSS](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%204007)
+- [SSD Advisory - OpenSSH Pre-Auth XMSS Integer Overflow](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%204033)
 ---
 
 
