@@ -1,4 +1,4 @@
-# SSD Advisory – Intel Windows Graphics Driver Buffer Overflow to Privilege Escalation66
+# SSD Advisory – Intel Windows Graphics Driver Buffer Overflow to Privilege Escalation
 
 ## Vulnerability Summary
 The igdkmd64 module in the Intel Graphics Driver DCH on Windows allows local users to gain Escalation of Privileges or cause Denial of Service (crash) via a crafted D3DKMTEscape request.
