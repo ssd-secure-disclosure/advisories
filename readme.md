@@ -77,6 +77,7 @@ Designed by researchers, for researchers, SSD provides the fast response and sup
 - [SSD Advisory - iOS Jailbreak via Sandbox Escape and Kernel R/W leading to RCE](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%204066)
 - [SSD Advisory - Intel Windows Graphics Driver Buffer Overflow to Privilege Escalation](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%203991)
 - [SSD Advisory - Intel Windows Graphics Driver Out of Bounds Read Denial of Service](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%204002)
+- [SSD Advisory - Synology DSM Remote Command Injection](https://github.com/ssd-secure-disclosure/advisories/tree/master/SSD%20Advisory%20-%204047)
 ---
 
 
