@@ -1,0 +1,1 @@
+void spray(unsigned int spray_count, void* spray, unsigned int spray_length);
